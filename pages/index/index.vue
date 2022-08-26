@@ -1,5 +1,6 @@
 <template>
 	<view class="content">
+		<!-- 轮播图 -->
 		<u-swiper :list="swiperlist" height="328" name="img_url"></u-swiper>
 		<!-- tabs -->
 		<!-- 使用内置样式，u-text-center表示文字居中对齐，u-m-t-20表示u-margin-top-x -->

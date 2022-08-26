@@ -26,6 +26,7 @@
 			<view class="u-p-b-80">
 				<!-- 商品详情区 -->
 				<template v-if="tabsCurrent === 0">
+					<!-- u-prase富文本解析 -->
 					<u-parse :html="goods.details"></u-parse>
 				</template>
 				<!-- 商品评论区 -->

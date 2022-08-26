@@ -35,6 +35,13 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {

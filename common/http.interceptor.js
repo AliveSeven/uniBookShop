@@ -14,8 +14,8 @@ const install = (Vue, vm) => {
 	// 请求拦截，配置Token等参数
 	Vue.prototype.$u.http.interceptor.request = (config) => {
 		// 将vuex内的token注入请求头
-		// config.header.Authorization =
-		// 	`Bearer ${vm.vuex_token}`
+		config.header.Authorization =
+			`Bearer ${vm.vuex_token}`
 		return config;
 
 	}

@@ -52,9 +52,8 @@
 					</scroll-view>
 				</block>
 			</view>
-
-
 		</template>
+
 		<template v-else>
 			<view class="loading">
 				<u-loading size="40" color="#2979ff"></u-loading>
@@ -168,6 +167,10 @@
 	}
 
 	.u-menu-wrap {
+		// flex是 flex-grow，flex-shrink，flex-basis的缩写
+		// flex-grow:：当父控件还有剩余空间的时候，是否进行放大(grow)其中数值代表的是放大比例，值为0的时候表示不放大；
+		// flex-shrink：当父控件空间不够的时候，是否进行缩小(shrink)其中数值代表的是与控件大小有关的缩小比例；
+		// 所以flex：1；的逻辑就是用flex-basis把width干掉，然后再用flex-grow和flex-shrink增大的增大缩小的缩小，达成最终的效果。
 		flex: 1;
 		display: flex;
 		overflow: hidden;
