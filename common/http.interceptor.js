@@ -17,7 +17,6 @@ const install = (Vue, vm) => {
 		config.header.Authorization =
 			`Bearer ${vm.vuex_token}`
 		return config;
-
 	}
 
 	// 响应拦截，判断状态码是否通过
@@ -55,14 +54,14 @@ const install = (Vue, vm) => {
 	}
 
 	// 增加patch请求
-	// vm.$u.patch = (url, params = {}, header = {}) => {
-	// 	// 模拟patch请求
-	// 	const _params = {
-	// 		...params,
-	// 		_method: 'PATCH'
-	// 	}
-	// 	return vm.$u.post(url, _params, header)
-	// }
+	vm.$u.patch = (url, params = {}, header = {}) => {
+		// 模拟patch请求
+		const _params = {
+			...params,
+			_method: 'PATCH'
+		}
+		return vm.$u.post(url, _params, header)
+	}
 }
 
 export default {

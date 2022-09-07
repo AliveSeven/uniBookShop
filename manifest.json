@@ -1,6 +1,6 @@
 {
     "name" : "uView-demo",
-    "appid" : "__UNI__DE5C136",
+    "appid" : "__UNI__7347402",
     "description" : "",
     "versionName" : "1.5.0",
     "versionCode" : "100",
@@ -80,7 +80,8 @@
     "h5" : {
         "template" : "template.h5.html",
         "router" : {
-            "mode" : "history"
+            "mode" : "history",
+            "base" : "./"
         }
     }
 }
