@@ -3,7 +3,7 @@
 
 前端地址(源码)：[uniBookShop](https://github.com/AliveSeven/uniBookShop) 
 
-预览地址：https://aliveseven.github.io/uniBookShop/unpackage/dist/build/h5/index.html#/(https://aliveseven.github.io/uniBookShop/unpackage/dist/build/h5/index.html#/) 
+预览地址：https://aliveseven.github.io/uniBookShop/unpackage/dist/build/h5/index.html#/
 
 接口文档：[API接口文档](https://www.showdoc.com.cn/1207745568269674/6094279351627422) 
 
