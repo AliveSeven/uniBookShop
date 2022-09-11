@@ -79,8 +79,8 @@
 						title: '登录成功'
 					})
 					setTimeout(() => {
-						// 回溯跳转
-						const url = uni.getStorage("currentRoute") || "/pages/index/index"
+						// 回溯跳转，用getStorageSync是同步操作
+						const url = uni.getStorageSync("currentRoute") || "/pages/index/index"
 						this.$u.route({
 							type: "reLaunch",
 							url

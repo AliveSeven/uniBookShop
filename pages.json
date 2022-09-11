@@ -78,8 +78,8 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/index.png",
-				"selectedIconPath": "static/index-selected.png",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-select.png",
 				"text": "首页"
 			},
 			{
@@ -96,8 +96,8 @@
 			},
 			{
 				"pagePath": "pages/center/index",
-				"iconPath": "static/center.png",
-				"selectedIconPath": "static/center-selected.png",
+				"iconPath": "static/icon/profile.png",
+				"selectedIconPath": "static/icon/profile-select.png",
 				"text": "我"
 			}
 		]
