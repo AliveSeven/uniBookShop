@@ -163,7 +163,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} //
 //
 //
 //
@@ -224,6 +224,50 @@ var _default =
         return '两次密码不一致';
       } else {
         return '';
+      }
+    } },
+
+
+  methods: {
+    toRegister: function toRegister() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var params, regRes;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.prev = 0;
+
+                //注册btn样式
+                _this.submitBtn = true;
+                // 准备提交参数
+                params = {
+                  name: _this.name,
+                  email: _this.email,
+                  password: _this.password,
+                  password_confirmation: _this.password_confirmation };
+
+                // 注册接口
+                _context.next = 5;return _this.$u.api.authRegister(params);case 5:regRes = _context.sent;
+                _this.submitBtn = false;
+                // 注册成功，重定向到登录（关闭注册页面）
+                _this.$u.toast('注册成功！');
+                // 延时跳转
+                setTimeout(function () {
+                  _this.$u.route({
+                    type: "redirect",
+                    url: "/pages/user/login",
+                    params: {
+                      email: _this.email,
+                      password: _this.password } });
+
+
+                  // this.$router.p(url)
+                }, 100);_context.next = 14;break;case 11:_context.prev = 11;_context.t0 = _context["catch"](0);
+
+                _this.submitBtn = false;case 14:case "end":return _context.stop();}}}, _callee, null, [[0, 11]]);}))();
+
+    },
+    submit: function submit() {
+      if (this.$u.test.email(this.email) && this.password && this.password == this.password_confirmation && this.
+      name) {
+        this.toRegister();
+
+      } else {
+        return false;
       }
     } } };exports.default = _default;
 

@@ -29,13 +29,12 @@
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false,
-    "minifyWXML": true
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.30.0",
   "appid": "wxcfee98a586cbaef1",
-  "projectname": "uView-demo",
+  "projectname": "uniBookShop",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",

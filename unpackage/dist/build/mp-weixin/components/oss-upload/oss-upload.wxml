@@ -1,0 +1,1 @@
+<u-upload vue-id="ea3041bc-1" action="{{action}}" max-count="1" before-upload="{{beforeUpload}}" show-progress="{{false}}" form-data="{{formData}}" multiple="{{false}}" width="140" height="140" data-event-opts="{{[['^onSuccess',[['upSuccess']]]]}}" bind:onSuccess="__e" bind:__l="__l"></u-upload>

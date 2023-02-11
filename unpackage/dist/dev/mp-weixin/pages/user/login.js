@@ -227,7 +227,8 @@ var _default =
                     type: "reLaunch",
                     url: url });
 
-                });_context.next = 16;break;case 13:_context.prev = 13;_context.t0 = _context["catch"](1);
+                  _this.$router.go(0);
+                }, 100);_context.next = 16;break;case 13:_context.prev = 13;_context.t0 = _context["catch"](1);
 
 
                 //TODO handle the exception
