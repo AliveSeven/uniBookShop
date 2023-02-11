@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.wrap.data-v-68bfbccd {
+  height: 90vh;
+}
+.wrap .loading.data-v-68bfbccd {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.wrap .goods-show .base-info .title.data-v-68bfbccd,
+.wrap .goods-show .base-info .price.data-v-68bfbccd {
+  font-weight: bolder;
+}
+.wrap .goods-show .base-info .price.data-v-68bfbccd {
+  color: #d12d3a;
+}
+.wrap .goods-show .comment.data-v-68bfbccd {
+  display: flex;
+  padding: 30rpx;
+}
+.wrap .goods-show .comment .left image.data-v-68bfbccd {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+.wrap .goods-show .comment .right.data-v-68bfbccd {
+  flex: 1;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+.wrap .goods-show .comment .right .top.data-v-68bfbccd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.wrap .goods-show .comment .right .top .name.data-v-68bfbccd {
+  color: #5677fc;
+}
+.wrap .goods-show .comment .right .top .like.data-v-68bfbccd {
+  display: flex;
+  align-items: center;
+  color: #9a9a9a;
+  font-size: 26rpx;
+}
+.wrap .goods-show .comment .right .top .like .num.data-v-68bfbccd {
+  margin-right: 4rpx;
+  color: #9a9a9a;
+}
+.wrap .goods-show .comment .right .top .highlight.data-v-68bfbccd {
+  color: #5677fc;
+}
+.wrap .goods-show .comment .right .top .highlight .num.data-v-68bfbccd {
+  color: #5677fc;
+}
+.wrap .goods-show .comment .right .content.data-v-68bfbccd {
+  margin-bottom: 10rpx;
+}
+.wrap .goods-show .comment .right .reply-box.data-v-68bfbccd {
+  background-color: #f2f2f2;
+  border-radius: 12rpx;
+  text-indent: 1em;
+}
+.wrap .goods-show .comment .right .reply-box .item.data-v-68bfbccd {
+  padding: 20rpx;
+  border-bottom: solid 2rpx #e4e7ed;
+}
+.wrap .goods-show .comment .right .reply-box .item .username.data-v-68bfbccd {
+  font-size: 24rpx;
+  color: #999999;
+}
+.wrap .goods-show .comment .right .reply-box .all-reply.data-v-68bfbccd {
+  padding: 20rpx;
+  display: flex;
+  color: #5677fc;
+  align-items: center;
+}
+.wrap .goods-show .comment .right .reply-box .all-reply .more.data-v-68bfbccd {
+  margin-left: 6rpx;
+}
+.wrap .goods-show .comment .right .bottom.data-v-68bfbccd {
+  margin-top: 20rpx;
+  display: flex;
+  font-size: 24rpx;
+  color: #9a9a9a;
+}
+.wrap .goods-show .comment .right .bottom .reply.data-v-68bfbccd {
+  color: #5677fc;
+  margin-left: 10rpx;
+}
+.wrap .navigation.data-v-68bfbccd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  border: solid 2rpx #f2f2f2;
+  background-color: #ffffff;
+  padding: 16rpx 0;
+  justify-content: space-between;
+}
+.wrap .navigation .left.data-v-68bfbccd {
+  flex: 3;
+  display: flex;
+  font-size: 20rpx;
+  justify-content: space-around;
+}
+.wrap .navigation .left .item.data-v-68bfbccd {
+  position: relative;
+  text-align: center;
+}
+.wrap .navigation .right.data-v-68bfbccd {
+  flex: 9;
+  display: flex;
+  font-size: 28rpx;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrap .navigation .right .btn.data-v-68bfbccd {
+  text-align: center;
+  line-height: 66rpx;
+  width: 90%;
+  border-radius: 10rpx;
+  color: #ffffff;
+}
+.wrap .navigation .right .cart.data-v-68bfbccd {
+  background-color: #2979ff;
+  margin-right: 30rpx;
+}
+.wrap .navigation .right .buy.data-v-68bfbccd {
+  background-color: #ff7900;
+}
+

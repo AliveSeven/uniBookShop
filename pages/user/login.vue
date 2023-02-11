@@ -85,7 +85,8 @@
 							type: "reLaunch",
 							url
 						})
-					})
+						this.$router.go(0)
+					}, 100)
 
 				} catch (e) {
 					//TODO handle the exception

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.wrap .collectList .goodsBox.data-v-6ac705dd {
+  box-shadow: 0 0 5rpx 6rpx rgba(204, 204, 204, 0.3);
+}
+.wrap .collectList .goodsBox .baseInfo.data-v-6ac705dd {
+  height: 200rpx;
+  flex-direction: column;
+}
+.wrap .collectList .goodsBox .baseInfo .title.data-v-6ac705dd {
+  font-weight: 550;
+}
+.wrap .collectList .goodsBox .baseInfo .price.data-v-6ac705dd {
+  color: red;
+}
+

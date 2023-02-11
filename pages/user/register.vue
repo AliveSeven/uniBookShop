@@ -62,6 +62,49 @@
 				}
 			}
 
+		},
+		methods: {
+			async toRegister() {
+				try {
+					//注册btn样式
+					this.submitBtn = true
+					// 准备提交参数
+					const params = {
+						name: this.name,
+						email: this.email,
+						password: this.password,
+						password_confirmation: this.password_confirmation
+					}
+					// 注册接口
+					const regRes = await this.$u.api.authRegister(params)
+					this.submitBtn = false
+					// 注册成功，重定向到登录（关闭注册页面）
+					this.$u.toast('注册成功！')
+					// 延时跳转
+					setTimeout(() => {
+						this.$u.route({
+							type: "redirect",
+							url: "/pages/user/login",
+							params: {
+								email: this.email,
+								password: this.password
+							}
+						})
+						// this.$router.p(url)
+					}, 100)
+				} catch (e) {
+					this.submitBtn = false
+				}
+			},
+			submit() {
+				if (this.$u.test.email(this.email) && this.password && this.password == this.password_confirmation && this
+					.name) {
+					this.toRegister()
+
+				} else {
+					return false
+				}
+			},
 		}
 	}
 </script>
