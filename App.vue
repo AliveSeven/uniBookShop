@@ -15,5 +15,5 @@
 <style lang="scss">
 	@import "uview-ui/index.scss";
 	/*每个页面公共css */
-	@import url('//at.alicdn.com/t/c/font_3642898_matetk1xxn9.css');
+	@import "@/static/icon.css";
 </style>

@@ -60,6 +60,7 @@
 		</template>
 	</view>
 </template>
+
 <script>
 	export default {
 		data() {
@@ -67,13 +68,11 @@
 				goodsList: [],
 			};
 		},
-		// 后台进入前台调用
 		onShow() {
 			if (this.vuex_token) {
 				this.getCartGoods()
 			}
 		},
-		// 计算属性将被混入到 Vue 实例中。所有 getter 和 setter 的 this 上下文自动地绑定为 Vue 实例。
 		computed: {
 			// 全选和全不选判断
 			allCheck: {
@@ -107,12 +106,13 @@
 					}
 				})
 			},
-			// 获取购物车里面的商品
+			// 获取购物车内商品
 			async getCartGoods() {
 				const {
 					data
 				} = await this.$u.api.cartGoods()
-				this.goodList = data
+				this.goodsList = data
+				console.log('获取购物车内商品', data)
 			},
 			// 商品数量改变
 			async numChange(val) {
@@ -129,7 +129,6 @@
 				await this.$u.api.delCartGoods(id)
 				// 删除商品后进行提示   再次调用获取商品列表
 				this.$u.toast("移出购物车成功")
-				// 再次调用方法重新获取购物车商品
 				this.getCartGoods()
 			},
 			// 单个商品是否选中
@@ -146,8 +145,7 @@
 					}
 				})
 				if (!value) {
-					// 选中状态，点击后变成false
-					// splice是删除操作，arr.splice(起始索引index, 删除的个数, 新增元素1, 新增元素2...)
+					//选中状态，点击后变成false
 					idArr.splice(idArr.indexOf(name), 1)
 					await this.$u.api.isCheck(idArr)
 				} else {
@@ -178,11 +176,10 @@
 			},
 
 		}
-
 	}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 	.wrap {
 		min-height: 80vh;
 
